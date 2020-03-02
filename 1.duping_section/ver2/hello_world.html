@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<script src="cd.js"></script>
+		<style>
+			div.anf_div
+			{
+				margin:3px;
+				padding:0px;
+				border-style:solid;
+				border-color:grey;
+				background-color:black;
+			}
+			div.ctrl_bar
+			{
+				position:relative;
+				height:10px;
+				
+				margin:0px;
+				padding:5px;
+				border-style:solid;
+				border-color:grey;
+				background-color:blue;
+				
+				color:white;
+				font-family:monospace;
+			}
+			.textfeilds
+			{
+				position:relative;
+				margin:0px;
+				border-style:none;
+				padding:0px;
+				display: flex;
+				flex-flow: row;
+			}
+			.check
+			{
+				position:relative;
+				margin:0px;
+				border-style:none;
+				padding:0px;
+				display: flex;
+				flex-flow: row;
+			}
+			.scrolling
+			{
+				width:50%;
+				height:500px;
+				overflow: scroll;
+			}
+			textarea
+			{
+				font-family:monospace;
+				width:50%;
+				height:500px;
+				background-color:#202020;
+				color:white;
+				resize:none;
+			}
+			code
+			{
+				white-space: nowrap;
+				word-wrap:normal;
+				color:white;
+			}
+			button
+			{
+				background-color:white;
+				color:block;
+			}
+			.buttonOfMore
+			{
+				background-color:white;
+				color:block;
+				position:absolute; top:0; right:20px;
+			}
+			.buttonOfLess
+			{
+				background-color:red;
+				color:white;
+				position:absolute; top:0; right:0;
+			}
+			.buttonOfAdd
+			{
+				position:absolute; top:0; right:50px;
+			}
+			.buttonOfClear
+			{
+				position:absolute; top:0; right:0;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<button class="More" id="anf_buttonOfMore" onclick="dupe(0)">Add Element</button><br /><br />
+		<div class="anf_div" style="display:none;visibility:hidden" id="anf_div:0">
+			<div class="ctrl_bar">
+				<a>Hello world</a>
+				<button class="buttonOfMore" id="anf_buttonOfMore:0" onclick="dupe(0)">+</button>
+				<button class="buttonOfLess" id="anf_buttonOfLess:0" onclick="EXPLOSION(0)">X</button>
+			</div>
+			<div class="textfeilds">
+				<div class="scrolling"><code class="content" id="anf_content:0"></code></div>
+				<textarea class="text" id="anf_text:0" placeholder="Hello world! &#13; &#10;type something here and submit to show your code!"></textarea>
+			</div>
+			<div class="check">
+				<button class="buttonOfAdd" id="anf_buttonOfAdd:0" onclick="addLine(0)">Submit</button>
+				<button class="buttonOfClear" id="anf_buttonOfClear:0" onclick="cleanLine(0)">Clear</button><br />
+			</div>
+		</div>
+	</body>
+</html>
