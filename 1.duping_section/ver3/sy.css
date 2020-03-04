@@ -1,0 +1,98 @@
+div
+{
+	position:relative;
+	margin:0px;
+	border-style:none;
+	padding:0px;
+	
+	overflow: auto;
+}
+	div.anf_div
+	{
+		margin:3px;
+		padding:0px;
+		border-style:solid;
+		border-color:grey;
+		color:black;
+		background-color:white;
+	}
+	div.ctrl_bar
+	{
+		position:relative;
+		height:12px;
+		
+		margin:0px;
+		padding:5px;
+		border-style:solid;
+		border-color:grey;
+		background-color:blue;
+		
+		color:white;
+		font-family:monospace;
+	}
+	div.check
+	{
+		position:relative;
+		height:22px;
+	}
+	div.row
+	{
+		display: flex;
+		flex-flow: row;
+	}
+	
+	
+	
+	
+.view_place
+{
+	width:50%;
+	height:500px;
+	white-space: nowrap;
+	word-wrap:normal;
+	background-color:black;
+}
+code
+{
+	white-space: nowrap;
+	word-wrap:normal;
+	color:white;
+}
+
+
+
+
+
+
+textarea
+{
+	font-family:monospace;
+	width:50%;
+	height:500px;
+	background-color:#202020;
+	color:white;
+	resize:none;
+}
+
+
+
+
+button
+{
+	background-color:white;
+	color:block;
+}
+	.buttonOfMore
+	{position:absolute; top:0; right:20px;}
+	.buttonOfAdd
+	{position:absolute; top:0; right:50px;}
+	.buttonOfClear
+	{position:absolute; top:0; right:0;}
+
+
+	.buttonOfLess
+	{
+		background-color:red;
+		color:white;
+		position:absolute; top:0; right:0;
+	}

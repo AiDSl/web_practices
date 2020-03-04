@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script src="cd.js"></script>
+		<link rel="stylesheet" type="text/css" href="sy.css"></link>
+	</head>
+	
+	<body>
+		<div>
+			<button class="More" id="anf_buttonOfMore" onclick="dupe(1)">Add Element</button>
+		</div>
+		<div class="anf_div" style="display:none;visibility:hidden" id="anf_div:1">
+			<div class="ctrl_bar row">
+				<a>Hello world</a>
+				<button class="buttonOfMore" id="anf_buttonOfMore:1" onclick="dupe(1)">+</button>
+				<button class="buttonOfLess" id="anf_buttonOfLess:1" onclick="EXPLOSION(1)">X</button>
+			</div>
+			<div class="textfields row">
+				<div class="view_place"><code class="content" id="anf_content:1"></code></div>
+				<textarea class="text" id="anf_text:1" placeholder="Hello world! &#13; &#10;type something here and submit to show your code!"></textarea>
+			</div>
+			<div class="check row">
+				<button class="buttonOfAdd" id="anf_buttonOfAdd:1" onclick="addLine(1)">Submit</button>
+				<button class="buttonOfClear" id="anf_buttonOfClear:1" onclick="cleanLine(1)">Clear</button><br />
+			</div>
+		</div>
+	</body>
+</html>
